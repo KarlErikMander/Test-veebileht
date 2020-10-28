@@ -1,0 +1,88 @@
+#shadowBox {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Black w/opacity/see-through */
+    border: 3px solid;
+}
+
+.rainbow {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 32px;
+    font-family: monospace;
+    letter-spacing: 5px;
+}
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+<!--Kui tahad classi css muuta siis pead kirjutama .class name-->
+title {
+    color: lawngreen;
+    font-family: "Comic Sans MS";
+    font-size: 150%;
+}
+h1 {
+    color: darkred;
+    border-color: rgb(165, 87, 51);
+    border: ridge;
+    font: "Comic Sans MS";
+    text-align: center;
+    background-color: dimgray;
+}
+
+p {
+    color: darkviolet;
+    border: dashed;
+    font-family: "Comic Sans MS";
+    text-align: center;
+    background-color: dimgray;
+}
+li {
+    list-style-type:disc;
+    text-align: center;
+    color: rgb(0, 255, 149);
+}
+a:hover {
+    font-size: xx-large;
+    background-color: dimgray;
+}
+img {
+    border: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 20px;
+    border-radius: 20%;
+}
+body {
+    align-items: center;
+    background-color: lightgrey;
+    font-family: "Comic Sans MS";
+    background-image: url("https://media2.giphy.com/media/9wLKh6ms5t9qE/giphy.gif?cid=ecf05e47wk7emkw2fy1wmwzy7s0z3jg181wf88j62k9xs9xq&rid=giphy.gif");
+    background-repeat: repeat;
+}
+.column {
+    float: left;
+    width: 40%;
+  }
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
